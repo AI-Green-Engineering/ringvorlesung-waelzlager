@@ -1,6 +1,6 @@
 services:
   notebook:
-    image: jupyter/scipy-notebook
+    image: quay.io/jupyter/pytorch-notebook
     volumes:
       - ./src/:/home/jovyan
     ports:
