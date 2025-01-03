@@ -1,7 +1,11 @@
-version: '3.8'
-
 services:
   notebook:
-    image: jupyter/pytorch-notebook
+    image: jupyter/scipy-notebook
     volumes:
-        - ./
+      - ./src/:/home/jovyan
+    ports:
+      - "8888:8888"
+    environment:
+      JUPYTER_TOKEN: ""
+      JUPYTER_PASSWORD: ""
+    command: start-notebook.py --NotebookApp.token='' --NotebookApp.password=''
