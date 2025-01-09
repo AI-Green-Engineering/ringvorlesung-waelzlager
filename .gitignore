@@ -79,6 +79,7 @@ target/
 .ipynb_checkpoints
 .jupyter
 .local
+.virtual_documents
 
 # IPython
 profile_default/
